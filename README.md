@@ -1,2 +1,2 @@
 # rsschool-cv
-HTML, Css, Saas
+https://TatynaSilchenko.github.io/rsschool-cv/cv
