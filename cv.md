@@ -1,7 +1,7 @@
-##Tatyana Silchenko
+# Tatyana Silchenko
 
 
-###Contact Info
+### Contact Info
 
 
 [GitHub](https://github.com/TatynaSilchenko)
@@ -12,7 +12,7 @@ taniasilchenko212@gamil.com
 
 telegram: @taniaSi212
 
-###Summary
+### Summary
 
 Responsible and self-motivated Front End developer, with experience in
 creating landing pages, Spa using HTML, CSS, JS, React, Redux. I have good
@@ -21,7 +21,7 @@ I have 1-year experience, which includes building websites and apps that are res
  
 
 
-###Skills
+### Skills
 
 
 * HTML5&CSS&&Sass
@@ -41,7 +41,7 @@ I have 1-year experience, which includes building websites and apps that are res
 * Figma
 
 
-###Code examples
+### Code examples
 
 
 ```
@@ -63,7 +63,7 @@ I have 1-year experience, which includes building websites and apps that are res
 * Freelance projects - 02/2019-2020
 
 
-###Education
+### Education
 
 * Skyeng, 2020 - present
 * IT-incubator, 2019, React/Redux
@@ -75,7 +75,7 @@ I have 1-year experience, which includes building websites and apps that are res
 
 
 
-###English
+### English
 
 
 Level -B1
