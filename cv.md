@@ -63,3 +63,19 @@ I have 1-year experience, which includes building websites and apps that are res
 * Freelance projects - 02/2019-2020
 
 
+###Education
+
+* Skyeng, 2020 - present
+* IT-incubator, 2019, React/Redux
+* HTML Academy, 2017, HTML, CSS
+* Higher, 2012, Belarussian state pedagodgical univercity named after Maxim Tank
+* 2009, EICC «SNOGO», Visual C++
+
+
+
+
+
+###English
+
+
+Level -B1
