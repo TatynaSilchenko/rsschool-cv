@@ -71,7 +71,7 @@ h3 {
 }
 
 .title-block {
-  padding: 15px;
+  padding: 20px;
   width: 100%;
   background-color: #615f5f;
   color: #ffffff;
@@ -102,7 +102,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: calc(100vh - 88px);
+  height: calc(95vh - 88px);
 }
 
 .general-info .general-info__text p {
@@ -129,18 +129,22 @@ h3 {
   left: 0;
 }
 
-.skill-list {
+.skills {
+  margin-bottom: 115px;
+}
+
+.skill-list, .education-list {
   list-style: none;
   display: block;
 }
 
-.skill-list li {
+.skill-list li, .education-list li {
   display: block;
   position: relative;
   font-size: 2rem;
 }
 
-.skill-list li:before {
+.skill-list li:before, .education-list li:before {
   content: "";
   position: absolute;
   top: 1.2em;
@@ -152,6 +156,111 @@ h3 {
   border-radius: 50%;
 }
 
-.skill-list li:not(:last-child) {
+.skill-list li:not(:last-child), .education-list li:not(:last-child) {
   margin-bottom: 49px;
+}
+
+.code, .education {
+  margin-bottom: 150px;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.projects-wrapper .progect-item a {
+  display: block;
+  max-width: 368px;
+  height: 337px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.projects-wrapper .progect-item a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  border-radius: 4px;
+}
+
+.projects-wrapper .progect-item a:hover {
+  cursor: pointer;
+}
+
+.projects-wrapper .progect-item a:hover:after {
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+.projects-wrapper .progect-item a:hover p {
+  display: block;
+  font-family: 'Roboto-Medium';
+  font-size: 1.3rem;
+  color: #e40041ce;
+}
+
+.projects-wrapper .progect-item a img {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.projects-wrapper .progect-item a p {
+  position: absolute;
+  display: none;
+}
+
+.english {
+  margin-bottom: 80px;
+}
+
+.english-wrapper .title-block {
+  margin-bottom: 50px;
+}
+
+.english-wrapper p {
+  font-size: 1.5rem;
+}
+
+.contacts {
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.contacts li {
+  margin-bottom: 15px;
+  color: #615f5f;
+}
+
+.contacts li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #615f5f;
+}
+
+.contacts li a:hover {
+  color: #e40041ce;
+}
+
+.contacts li label {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  color: #111111;
+}
+
+.footer {
+  background-color: #615f5f;
 }

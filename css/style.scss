@@ -77,7 +77,7 @@ h3 {
 }
 
 .title-block{
-  padding: 15px;
+  padding: 20px;
   width: 100%;
   background-color: $colorBG;
   color: $colorText;
@@ -109,7 +109,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: calc(100vh - 88px);
+  height: calc(95vh - 88px);
 
   .general-info__text {
 
@@ -145,11 +145,11 @@ h3 {
 
 .skills{
   // height: 50vh;
-  // margin-bottom: 115px;
+  margin-bottom: 115px;
 }
 
 
-.skill-list{
+.skill-list, .education-list{
   list-style: none;
   display: block;
   // margin-left: -10px;
@@ -177,4 +177,113 @@ h3 {
   li:not(:last-child){
     margin-bottom: 49px;
   }
+}
+
+.code, .education{
+  margin-bottom: 150px;
+}
+
+.projects-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 30px;
+
+  .progect-item a{
+    display: block;
+    max-width: 368px;
+    height: 337px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+
+    &:after { 
+      content: '';
+      position: absolute;
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      background: rgba(0,0,0,.2);  
+      opacity: 0; 
+      border-radius: 4px;
+  }
+
+    &:hover{
+      cursor: pointer;
+
+      &:after {
+        opacity: 1; 
+        transition:opacity .2s linear ;
+       }
+
+      p{
+        display: block;
+        font-family: 'Roboto-Medium';
+        font-size: 1.3rem;
+        color:$secondColor;
+      }
+    }
+
+    img{
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    p{
+      position: absolute;
+      display: none;
+    }
+  }
+}
+
+.english{
+ margin-bottom: 80px; 
+}
+
+.english-wrapper{
+
+  .title-block{
+    margin-bottom: 50px;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+.contacts{
+  font-size: 1.5rem;
+  list-style: none;
+
+  li{
+    margin-bottom: 15px;
+    color: $colorBG;
+
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: $colorBG;
+
+      &:hover{
+        color: $secondColor;
+      }
+    }
+
+    label{
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      color: #111111;
+    }
+  }
+  
+}
+
+.footer{
+  background-color: $colorBG;
 }
