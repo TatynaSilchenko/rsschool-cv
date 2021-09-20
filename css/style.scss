@@ -20,7 +20,6 @@ body {
 
 header.header-data {
   background-color: $colorBG;
-  margin-bottom: 60px;
 
   nav {
     padding: 25px;
@@ -83,7 +82,7 @@ h3 {
   background-color: $colorBG;
   color: $colorText;
   padding-left: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .content-wrapper{
@@ -110,7 +109,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 150px 0;
+  height: calc(100vh - 88px);
 
   .general-info__text {
 
@@ -145,19 +144,21 @@ h3 {
 }
 
 .skills{
-  margin-bottom: 115px;
+  // height: 50vh;
+  // margin-bottom: 115px;
 }
 
 
 .skill-list{
   list-style: none;
   display: block;
-  margin-left: -10px;
+  // margin-left: -10px;
 
   li{
     display: block;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    
 
 
     &:before{
@@ -174,6 +175,6 @@ h3 {
   }
 
   li:not(:last-child){
-    margin-bottom: 16px;
+    margin-bottom: 49px;
   }
 }
