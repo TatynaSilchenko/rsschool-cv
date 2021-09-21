@@ -10,14 +10,16 @@
 <header class="header-data">
     <nav class="content-container">
         <ul>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Languages</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#language">Languages</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
+    <div class="navbar-toggler-burger" id='burger'></div>
+
 </header>
 
 <main>
@@ -27,7 +29,7 @@
                 <img class="photo-img" src="./assets/img/photo.jpg" alt="photo">
             </div>
             <div class="general-info__text">
-                <h2>My name is Tatyana Silchenko</h2>
+                <h1>My name is Tatyana Silchenko</h1>
                 <p> Responsible and attentive to details. 
                 </p>
                 <p>Inclined to self-education and self-development.</p>
@@ -35,7 +37,7 @@
                     and apps that are responsive and usable, supporting projects.</p>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills-wrapper">
                 <div class="title-block">
                     <h2 class="title content-container">Skills</h2>
@@ -50,36 +52,96 @@
                 </ul>
             </div>
         </section>
-        <section class="code">
+        <section class="code" id="projects">
             <div class="code-wrapper">
                 <div class="title-block">
                     <h2 class="title content-container">Progects</h2>
                 </div>
                 <div class="projects-wrapper content-container content-wrapper">
                     <div class="progect-item">
-                        <a href="https://github.com/TatynaSilchenko/My_app">
+                        <a href="https://github.com/TatynaSilchenko/My_app" target="_blank">
                             <img src="assets/img/socialNetworkImg.png" alt="social network">
-                            <p>Social Network</p>
+
+                            <div class="project-info">
+                                <p>Social Network</p>
+                                <p class="tecnologi"> React, Redux, TS</p>
+                                <p class="description">Social network for it wokers</p>
+                            </div>
+
                         </a>
                     </div>
                     <div class="progect-item">
-                        <a href="https://github.com/TatynaSilchenko/ToDoList">
+                        <a href="https://github.com/TatynaSilchenko/ToDoList" target="_blank">
                             <img src="assets/img/todolist.jpg" alt="todo list">
-                            <p>Todo List</p>
+                            <div class="project-info">
+                                <p>Todo List</p>
+                                <p class="tecnologi"> React, Redux, TS</p>
+                                <p class="description">Add for check does</p>
+                            </div>
+
                         </a>
                     </div>
 
                     <div class="progect-item">
-                        <a href="https://github.com/TatynaSilchenko/movie-search">
+                        <a href="https://github.com/TatynaSilchenko/movie-search" target="_blank">
                             <img src="assets/img/movies-search.jpg" alt="movie search">
-                            <p>Movie Search</p>
+
+                            <div class="project-info">
+                                <p>Movie Search</p>
+                                <p class="tecnologi"> React, Redux, TS</p>
+                                <p class="description">Add for check does</p>
+                            </div>
                         </a>
                     </div>
                  </div>
 
             </div>
         </section>
-        <section class="education">
+        <section class="experience" id="experience">
+           
+            <div class="title-block">
+                <h2 class="title content-container ">Experience</h2>
+            </div>
+            <div class="experience-wrapper content-container">
+                <ul class="content-container experience-list content-wrapper">
+                    <li class="experience-item">
+                        since 2020,software engineer
+                        <p>
+                            App for education (React, Redux, JS, React Router, Redux-Thunk, Axios,
+HTML, Css-modules)</p>
+                    </li>
+                    <li class="experience-item"> since 2019 - 2020 freelance</li>
+                    <li class="experience-item">2015 - 2019, Tutor of mathematics and infomatics
+                    </li>
+                    <li class="education-item"> 2013 - 2015, teacher of mathematics and informatics</li>
+                </ul>
+        </div>
+    </section>
+        <section class="example">
+           
+                <div class="title-block">
+                    <h2 class="title content-container ">Example</h2>
+                </div>
+                <div class="example-wrapper content-container content-wrapper">
+                <code class="">
+                    function revrot(str, sz) {<br> 
+                        if (sz > str.length) <br> 
+                          return '';<br> 
+                      
+                        let reverse = s => s.split('').reverse().join('');<br> 
+                        let rotate  = s => s.slice(1) + s.slice(0, 1);<br> 
+                        let sum_cubes = c => c.split('').reduce((a, b) => a + +b ** 3, 0); <br> 
+                      
+                        return str<br> 
+                          .match(new RegExp('.{' + sz + '}', 'g'))<br> 
+                          .map(c => sum_cubes(c) % 2 ? rotate(c) : reverse(c))<br> 
+                          .join('');<br> 
+                      }
+                </code>
+            </div>
+        </section>
+        
+        <section class="education" id="education">
             <div class="education-wrapper">
                 <div class="title-block">
                     <h2 class="title content-container">Education</h2>
@@ -96,15 +158,17 @@
 
             </div>
         </section>
-        <section class="english">
+        <section class="english" id="language">
             <div class="english-wrapper">
                 <div class="title-block">
-                    <h2 class="title content-container">English</h2>
+                    <h2 class="title content-container">Languages</h2>
                 </div>
                 <p class="content-container content-wrapper"><label>English:</label> B1</p>
+                <p class="content-container content-wrapper"><label>Russian:</label> native</p>
+                <p class="content-container content-wrapper"><label>Belarusian:</label> native</p>
             </div>
         </section>
-        <section class="contacts-data">
+        <section class="contacts-data" id="contacts">
             <div class="contacts-wrapper">
                 <div class="title-block">
                     <h2 class="title content-container">Contact Info</h2>
@@ -127,6 +191,6 @@
        <a href="https://rs.school/js/"> <img src="assets/img/rs_school_js.svg" alt="logo"></a>
     </div>
 </footer>
-
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
